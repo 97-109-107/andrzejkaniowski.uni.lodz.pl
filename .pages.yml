@@ -1,6 +1,7 @@
 media:
   input: static/assets
   output: /assets
+
 content:
   - name: homepage
     label: Home Page
@@ -16,10 +17,13 @@ content:
       - name: body
         label: Content
         type: rich-text
+
   - name: aktuelles
     label: Aktuelles
     type: collection
     path: content/aktuelles
+    extension: md
+    format: yaml-frontmatter
     exclude: ["_index.md"]
     view:
       title: title
@@ -40,36 +44,42 @@ content:
       - name: body
         label: Content
         type: rich-text
+
   - name: vita
-    label: Vita
+    label: Vita (CV Entries)
     type: file
-    path: content/vita.md
+    path: data/vita.yaml
+    format: datagrid
     fields:
-      - name: title
-        label: Title
+      - name: year
+        label: Year/Period
         type: string
-      - name: body
-        label: Content
-        type: rich-text
+      - name: content
+        label: Description
+        type: text
+
   - name: publikationen
-    label: Publikationen
+    label: Publikationen (Publications)
     type: file
-    path: content/publikationen.md
+    path: data/publications.yaml
+    format: datagrid
     fields:
-      - name: title
-        label: Title
+      - name: type
+        label: Category
         type: string
-      - name: body
-        label: Content
-        type: rich-text
+      - name: content
+        label: Publication Details
+        type: text
+
   - name: forschungsprojekte
-    label: Forschungsprojekte
+    label: Forschungsprojekte (Research Projects)
     type: file
-    path: content/forschungsprojekte.md
+    path: data/projects.yaml
+    format: datagrid
     fields:
-      - name: title
-        label: Title
+      - name: duration
+        label: Duration
         type: string
-      - name: body
-        label: Content
-        type: rich-text
+      - name: description
+        label: Description
+        type: text
