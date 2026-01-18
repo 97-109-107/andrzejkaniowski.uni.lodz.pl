@@ -49,37 +49,52 @@ content:
     label: Vita (CV Entries)
     type: file
     path: data/vita.yaml
-    format: datagrid
+    format: yaml
     fields:
-      - name: year
-        label: Year/Period
-        type: string
-      - name: content
-        label: Description
-        type: text
+      - name: entries
+        label: CV Entries
+        type: object
+        list: true
+        fields:
+          - name: year
+            label: Year/Period
+            type: string
+          - name: content
+            label: Description
+            type: text
 
   - name: publikationen
     label: Publikationen (Publications)
     type: file
     path: data/publications.yaml
-    format: datagrid
+    format: yaml
     fields:
-      - name: type
-        label: Category
-        type: string
-      - name: content
-        label: Publication Details
-        type: text
+      - name: publications
+        label: Publications
+        type: object
+        list: true
+        fields:
+          - name: type
+            label: Category
+            type: string
+          - name: content
+            label: Publication Details
+            type: text
 
   - name: forschungsprojekte
     label: Forschungsprojekte (Research Projects)
     type: file
     path: data/projects.yaml
-    format: datagrid
+    format: yaml
     fields:
-      - name: duration
-        label: Duration
-        type: string
-      - name: description
-        label: Description
-        type: text
+      - name: projects
+        label: Projects
+        type: object
+        list: true
+        fields:
+          - name: duration
+            label: Duration
+            type: string
+          - name: description
+            label: Description
+            type: text
