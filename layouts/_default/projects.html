@@ -5,9 +5,9 @@
         <div class="entry-content clearfix">
             {{ .Content }}
 
-            {{ if .Site.Data.projects }}
+            {{ if .Site.Data.projects.projects }}
             <ul class="projects-list" style="list-style-type: none; padding-left: 0;">
-                {{ range .Site.Data.projects }}
+                {{ range .Site.Data.projects.projects }}
                 <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 20px;">
                     <span class="project-duration" style="min-width: 140px; font-weight: bold; flex-shrink: 0;">{{
                         .duration }}</span>

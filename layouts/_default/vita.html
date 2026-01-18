@@ -5,9 +5,9 @@
         <div class="entry-content clearfix">
             {{ .Content }}
 
-            {{ if .Site.Data.vita }}
+            {{ if .Site.Data.vita.entries }}
             <ul class="vita-list" style="list-style-type: none; padding-left: 0;">
-                {{ range .Site.Data.vita }}
+                {{ range .Site.Data.vita.entries }}
                 <li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 20px;">
                     <span class="vita-year" style="min-width: 100px; font-weight: bold; flex-shrink: 0;">{{ .year
                         }}</span>

@@ -10,7 +10,7 @@
             {{ $slugs := dict "Bücher" "bucher" "Herausgeber" "herausgeber" "Beiträge" "beitraege" "Rezensionen"
             "rezensionen" "Statements und Essays" "statements" "Übersetzungen" "uebersetzungen" "In Vorbereitung"
             "vorbereitung" }}
-            {{ $items := .Site.Data.publications }}
+            {{ $items := .Site.Data.publications.publications }}
 
             <p>
                 {{ range $index, $element := $types }}
@@ -24,9 +24,9 @@
             {{ if $filtered }}
             <h2 id="{{ index $slugs $currentType }}">{{ $currentType }}</h2>
             <ul>
-            {{ range $filtered }}
-            <li>{{ .content | markdownify }}</li>
-            {{ end }}
+                {{ range $filtered }}
+                <li>{{ .content | markdownify }}</li>
+                {{ end }}
             </ul>
             {{ end }}
             {{ end }}

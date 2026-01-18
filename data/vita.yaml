@@ -1,32 +1,33 @@
-- year: 2015 –
-  content: Chefredakteur einer Zeitschrift “Folia Philosophica. Ethica – Aesthetica – Practica”
-- year: 2013 –
-  content: Mitglied des Auswahlausschusses (für Philosophie) des Nationalen Wissenschaftszentrums in Polen (NCN)
-- year: 2011 –
-  content: Experte des Bewertungsgremiums des Polnischen Akkreditierungskomitees (Polska Komisja Akredytacyjna)
-- year: 2004–2006
-  content: "Teilnahme am Forschungsprojekt an der Europäischen Akademie (zusammen mit Kloepfer, B. Griefhahn et. all) *Leben mit Lärm?*"
-- year: 2002 –
-  content: Experte des Bewertungsgremiums des Polnischen Staatlichen Akkreditierungskomitees (Państwowa Komisja Akredytacyjna)
-- year: 2003
-  content: Ein dreimonatiges Stipendium an der Europäischen Akademie zur Erforschung von Folgen wissenschaftlich-technischer Entwicklungen Bad Neuenahr-Ahrweiler
-- year: 2000 –
-  content: Leiter des Lehrstuhls für Ethik an der Fakultät für Philosophie und Geschichte der Universität Lodz
-- year: 2000
-  content: Habilitation an der Fakultät für Philosophie und Geschichte der Universität Lodz und Erteilung der venia legendi für Fachgebiete Ethik und Sozialphilosophie
-- year: 1996
-  content: Senior Fellow am Institut für die Wissenschaften vom Menschen in Wien (Übersetzerprogramm finanziert von der Mellow Foundation)
-- year: 1990–1991
-  content: Stipendiat der Alexander von Humboldt-Stiftung (Universität Bonn; unter wissenschaftlicher Betreuung von Professor Dr. H.-M. Baumgartner)
-- year: 1988
-  content: Stipendiat des DAAD (zweimonatiger Forschungsaufenthalt am Zentrum für Philosophie und Grundlagen der Wissenschaft, Justus-Liebig-Universität Gießen)
-- year: 1982–2000
-  content: Adjunkt am Institut für Philosophie der Universität Lodz
-- year: 1982
-  content: "Promotion in der Philosophie an der Warschauer Universität: *Filozofia a polityka w krytycznej teorii społecznej J. Habermasa. Próba przywrócenia filozofii praktycznej* (Philosophie und Politik in der kritischen Gesellschaftstheorie von J. Habermas. Ein Versuch, die praktische Philosophie wiederherzustellen.)"
-- year: 1974-1982
-  content: Assistent am Institut für Politikwissenschaften der Universität Lodz
-- year: 1969-1974
-  content: Studium der Wirtschaftstheorie (und Soziologie) an der Warschauer Universität
-- year: 1951
-  content: Geboren (Sochaczew)
+entries:
+  - year: 2015 –
+    content: Chefredakteur einer Zeitschrift “Folia Philosophica. Ethica – Aesthetica – Practica”
+  - year: 2013 –
+    content: Mitglied des Auswahlausschusses (für Philosophie) des Nationalen Wissenschaftszentrums in Polen (NCN)
+  - year: 2011 –
+    content: Experte des Bewertungsgremiums des Polnischen Akkreditierungskomitees (Polska Komisja Akredytacyjna)
+  - year: 2004–2006
+    content: "Teilnahme am Forschungsprojekt an der Europäischen Akademie (zusammen mit Kloepfer, B. Griefhahn et. all) *Leben mit Lärm?*"
+  - year: 2002 –
+    content: Experte des Bewertungsgremiums des Polnischen Staatlichen Akkreditierungskomitees (Państwowa Komisja Akredytacyjna)
+  - year: 2003
+    content: Ein dreimonatiges Stipendium an der Europäischen Akademie zur Erforschung von Folgen wissenschaftlich-technischer Entwicklungen Bad Neuenahr-Ahrweiler
+  - year: 2000 –
+    content: Leiter des Lehrstuhls für Ethik an der Fakultät für Philosophie und Geschichte der Universität Lodz
+  - year: 2000
+    content: Habilitation an der Fakultät für Philosophie und Geschichte der Universität Lodz und Erteilung der venia legendi für Fachgebiete Ethik und Sozialphilosophie
+  - year: 1996
+    content: Senior Fellow am Institut für die Wissenschaften vom Menschen in Wien (Übersetzerprogramm finanziert von der Mellow Foundation)
+  - year: 1990–1991
+    content: Stipendiat der Alexander von Humboldt-Stiftung (Universität Bonn; unter wissenschaftlicher Betreuung von Professor Dr. H.-M. Baumgartner)
+  - year: 1988
+    content: Stipendiat des DAAD (zweimonatiger Forschungsaufenthalt am Zentrum für Philosophie und Grundlagen der Wissenschaft, Justus-Liebig-Universität Gießen)
+  - year: 1982–2000
+    content: Adjunkt am Institut für Philosophie der Universität Lodz
+  - year: 1982
+    content: "Promotion in der Philosophie an der Warschauer Universität: *Filozofia a polityka w krytycznej teorii społecznej J. Habermasa. Próba przywrócenia filozofii praktycznej* (Philosophie und Politik in der kritischen Gesellschaftstheorie von J. Habermas. Ein Versuch, die praktische Philosophie wiederherzustellen.)"
+  - year: 1974-1982
+    content: Assistent am Institut für Politikwissenschaften der Universität Lodz
+  - year: 1969-1974
+    content: Studium der Wirtschaftstheorie (und Soziologie) an der Warschauer Universität
+  - year: 1951
+    content: Geboren (Sochaczew)
