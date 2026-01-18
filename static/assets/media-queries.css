@@ -60,10 +60,11 @@
         height: 100%;
     }
 
-    #navbar-main,
+    /* Removed display:none to keep menu visible on mobile */
+    /* #navbar-main,
     #header #menu-main-slide {
         display: none
-    }
+    } */
 
     .navbar-toggle {
         display: block
