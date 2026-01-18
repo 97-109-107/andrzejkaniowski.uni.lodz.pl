@@ -1,7 +1,6 @@
 media:
   input: static/assets
   output: /assets
-
 content:
   - name: homepage
     label: Home Page
@@ -17,7 +16,6 @@ content:
       - name: body
         label: Content
         type: rich-text
-
   - name: aktuelles
     label: Aktuelles
     type: collection
@@ -42,7 +40,6 @@ content:
       - name: body
         label: Content
         type: rich-text
-
   - name: vita
     label: Vita
     type: document
@@ -54,7 +51,6 @@ content:
       - name: body
         label: Content
         type: rich-text
-
   - name: publikationen
     label: Publikationen
     type: document
@@ -66,7 +62,6 @@ content:
       - name: body
         label: Content
         type: rich-text
-
   - name: forschungsprojekte
     label: Forschungsprojekte
     type: document
