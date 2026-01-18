@@ -1,0 +1,80 @@
+media:
+  input: static/assets
+  output: /assets
+
+content:
+  - name: homepage
+    label: Home Page
+    type: document
+    path: content/_index.md
+    fields:
+      - name: date
+        label: Date
+        type: date
+      - name: draft
+        label: Draft
+        type: boolean
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: aktuelles
+    label: Aktuelles
+    type: collection
+    path: content/aktuelles
+    exclude: ["_index.md"]
+    view:
+      title: title
+      subtitle: date
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: slug
+        label: Slug
+        type: string
+      - name: draft
+        label: Draft
+        type: boolean
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: vita
+    label: Vita
+    type: document
+    path: content/vita.md
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: publikationen
+    label: Publikationen
+    type: document
+    path: content/publikationen.md
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: forschungsprojekte
+    label: Forschungsprojekte
+    type: document
+    path: content/forschungsprojekte.md
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Content
+        type: rich-text
