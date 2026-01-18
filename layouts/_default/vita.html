@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="column column-content single">
+    <div id="post-{{ .File.UniqueID }}" class="post page type-page status-publish hentry">
+        {{ if .Title }}<h1 class="title-header">{{ .Title }}</h1>{{ end }}
+        <div class="entry-content clearfix">
+            {{ .Content }}
+
+            {{ if .Site.Data.vita }}
+            <ul class="vita-list" style="list-style-type: none; padding-left: 0;">
+                {{ range .Site.Data.vita }}
+                <li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 20px;">
+                    <span class="vita-year" style="min-width: 100px; font-weight: bold; flex-shrink: 0;">{{ .year
+                        }}</span>
+                    <span class="vita-content">{{ .content | markdownify }}</span>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="column column-content single">
+    <div id="post-{{ .File.UniqueID }}" class="post page type-page status-publish hentry">
+        {{ if .Title }}<h1 class="title-header">{{ .Title }}</h1>{{ end }}
+        <div class="entry-content clearfix">
+            {{ .Content }}
+
+            {{ if .Site.Data.projects }}
+            <ul class="projects-list" style="list-style-type: none; padding-left: 0;">
+                {{ range .Site.Data.projects }}
+                <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 20px;">
+                    <span class="project-duration" style="min-width: 140px; font-weight: bold; flex-shrink: 0;">{{
+                        .duration }}</span>
+                    <span class="project-description">{{ .description | markdownify }}</span>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

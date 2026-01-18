@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ block "title" . }}{{ .Title }} &#8211; {{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href='{{ "assets/style.css" | relURL }}' type="text/css" media="all" />
+    <link rel="stylesheet" href='{{ "assets/media-queries.css" | relURL }}' type="text/css" media="all" />
+    <link rel="stylesheet" href='{{ "assets/dashicons.min.css" | relURL }}' type="text/css" media="all" />
+    <link rel="stylesheet" href='{{ "assets/tablepress.css" | relURL }}' type="text/css" media="all" />
+    <link rel="stylesheet" href='{{ "assets/wpfront-scroll-top.css" | relURL }}' type="text/css" media="all" />
+    <link rel="icon" href='{{ "assets/logo.png" | relURL }}' sizes="32x32" />
+    <style type="text/css">
+        body.custom-background {
+            background-color: #e5e5e5;
+        }
+    </style>
+</head>
+
+<body class="home page-template-default page column-double custom-background">
+    <div id="header" class="clearfix">
+        <div class="inner-wrap">
+            <div id="logo" class="logo-right">
+                <h1 id="site-title">
+                    <a href="{{ .Site.BaseURL | relURL }}" title="{{ .Site.Title }}" rel="home">
+                        {{ .Site.Title }}
+                    </a>
+                </h1>
+                <p id="site-description">{{ .Site.Params.description }}</p>
+            </div>
+        </div>
+        <div id="main-nav">
+            <div class="inner-wrap">
+                <nav class="main-navbar" role="navigation">
+                    <div id="navbar-main">
+                        <div class="menu-menu-container">
+                            <ul id="menu-menu-1" class="nav navbar-nav dropdown sf-menu">
+                                {{ $currentPage := . }}
+                                {{ range .Site.Menus.main }}
+                                <li class="menu-item {{ if $currentPage.IsMenuCurrent "main" . }}current-menu-item{{
+                                    end }}">
+                                    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div id="content" class="clearfix">
+            {{ block "main" . }}{{ end }}
+        </div>
+        <div id="footer" class="clearfix">
+            {{ partial "profile_footer" . }}
+        </div>
+    </div>
+    <div id="wpfront-scroll-top-container">
+        <img src="{{ " assets/scroll-top.png" | relURL }}" alt="" />
+    </div>
+</body>
+
+</html>

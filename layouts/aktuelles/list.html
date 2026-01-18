@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="column column-content single">
+    <h1 class="title-header">{{ .Title }}</h1>
+    <div class="entry-content clearfix">
+        {{ range .Pages }}
+        <div class="post hentry" style="margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+            <h2 class="entry-title" style="margin-bottom: 5px;">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <div class="entry-meta" style="font-size: 0.85em; color: #777; margin-bottom: 15px;">
+                Posted on {{ .Date.Format "January 2, 2006" }}
+            </div>
+            <div class="entry-summary">
+                <p>
+                    {{ .Summary }}
+                    {{ if .Truncated }}
+                    ... <a href="{{ .RelPermalink }}" class="more-link">Continue reading <span
+                            class="meta-nav">&rarr;</span></a>
+                    {{ end }}
+                </p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

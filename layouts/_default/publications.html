@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="column column-content single">
+    <div id="post-{{ .File.UniqueID }}" class="post page type-page status-publish hentry">
+        {{ if .Title }}<h1 class="title-header">{{ .Title }}</h1>{{ end }}
+        <div class="entry-content clearfix">
+            {{ .Content }}
+
+            {{ $types := slice "Bücher" "Herausgeber" "Beiträge" "Rezensionen" "Statements und Essays" "Übersetzungen"
+            "In Vorbereitung" }}
+            {{ $slugs := dict "Bücher" "bucher" "Herausgeber" "herausgeber" "Beiträge" "beitraege" "Rezensionen"
+            "rezensionen" "Statements und Essays" "statements" "Übersetzungen" "uebersetzungen" "In Vorbereitung"
+            "vorbereitung" }}
+            {{ $items := .Site.Data.publications }}
+
+            <p>
+                {{ range $index, $element := $types }}
+                {{ if $index }} | {{ end }}<a href="#{{ index $slugs $element }}">{{ $element }}</a>
+                {{ end }}
+            </p>
+
+            {{ range $types }}
+            {{ $currentType := . }}
+            {{ $filtered := where $items "type" $currentType }}
+            {{ if $filtered }}
+            <h2 id="{{ index $slugs $currentType }}">{{ $currentType }}</h2>
+            <ul>
+            {{ range $filtered }}
+            <li>{{ .content | markdownify }}</li>
+            {{ end }}
+            </ul>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

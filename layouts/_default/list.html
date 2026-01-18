@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="column column-content single">
+    <h1 class="title-header">{{ .Title }}</h1>
+    <div class="entry-content clearfix">
+        <ul>
+            {{ range .Pages }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,61 @@
+<div class="profile-footer-container">
+    <div class="profile-footer-col">
+        <img src='{{ "assets/profile.jpg" | relURL }}' alt="Andrzej M. Kaniowski" class="profile-footer-img">
+    </div>
+    <div class="profile-footer-col profile-footer-name">
+        <p>Prof. nadzw. dr. hab. Andrzej M. Kaniowski</p>
+    </div>
+    <div class="profile-footer-col profile-footer-address">
+        <p>
+            Katedra Etyki,<br>
+            Instytut Filozofii Uniwersytet Łódzki<br>
+            ul. Lindleya 3/5, PL-90-131 Łódź<br>
+            Tel.: 41-48-6356146
+        </p>
+    </div>
+</div>
+
+<style>
+    .profile-footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 20px 0;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .profile-footer-col {
+        flex: 1;
+        text-align: left;
+    }
+
+    .profile-footer-col p {
+        margin-top: 0;
+        line-height: 1.4;
+        color: #333;
+    }
+
+    .profile-footer-img {
+        max-width: 140px;
+        height: auto;
+        border-radius: 2px;
+    }
+
+    .profile-footer-name {
+        font-weight: bold;
+        color: #355574;
+    }
+
+    .profile-footer-address {
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+        .profile-footer-container {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+</style>

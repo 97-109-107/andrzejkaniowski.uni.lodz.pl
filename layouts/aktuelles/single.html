@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="column column-content single">
+    <div id="post-{{ .File.UniqueID }}" class="post page type-page status-publish hentry">
+        <h1 class="title-header">{{ .Title }}</h1>
+        <div class="entry-meta"
+            style="font-size: 0.9em; color: #777; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+            Posted on {{ .Date.Format "January 2, 2006" }}
+        </div>
+        <div class="entry-content clearfix">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}

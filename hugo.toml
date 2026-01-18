@@ -1,0 +1,39 @@
+baseURL = 'http://example.org/'
+languageCode = 'de-DE'
+title = 'prof. nadzw. dr hab. Andrzej M. Kaniowski'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = 'University of Lodz'
+  logo = 'assets/logo.png'
+  header_image = 'assets/header.jpg'
+  copy = 'Powered by Hugo / Academica Theme'
+
+[[menu.main]]
+  name = "HOME"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "VITA"
+  url = "/vita/"
+  weight = 20
+
+[[menu.main]]
+  name = "AKTUELLES"
+  url = "/aktuelles/"
+  weight = 30
+
+[[menu.main]]
+  name = "PUBLIKATIONEN"
+  url = "/publikationen/"
+  weight = 40
+
+[[menu.main]]
+  name = "FORSCHUNGSPROJEKTE"
+  url = "/forschungsprojekte/"
+  weight = 50
