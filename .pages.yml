@@ -4,7 +4,7 @@ media:
 content:
   - name: homepage
     label: Home Page
-    type: document
+    type: file
     path: content/_index.md
     fields:
       - name: date
@@ -42,7 +42,7 @@ content:
         type: rich-text
   - name: vita
     label: Vita
-    type: document
+    type: file
     path: content/vita.md
     fields:
       - name: title
@@ -53,7 +53,7 @@ content:
         type: rich-text
   - name: publikationen
     label: Publikationen
-    type: document
+    type: file
     path: content/publikationen.md
     fields:
       - name: title
@@ -64,7 +64,7 @@ content:
         type: rich-text
   - name: forschungsprojekte
     label: Forschungsprojekte
-    type: document
+    type: file
     path: content/forschungsprojekte.md
     fields:
       - name: title
