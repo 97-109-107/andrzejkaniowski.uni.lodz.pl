@@ -14,6 +14,9 @@ content:
       - name: draft
         label: Draft
         type: boolean
+      - name: header_image
+        label: Header Image
+        type: image
       - name: body
         label: Content
         type: rich-text
