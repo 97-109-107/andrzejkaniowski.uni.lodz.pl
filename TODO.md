@@ -1,0 +1,6 @@
+- TODO Übersetzungen -> Übersetzungen (Bucher), Übersetzungen (Aufsatez)
+- DONE Stopka -> Katedra Etyki i Estetyki
+- DONE Stopka -> dr. hab. <>, prof. UŁ
+- DONE Nagłówek -> dr. hab. <>, prof. UŁ
+- DONE Stopka @uni.lodz.pl
+- DONE Main page title
